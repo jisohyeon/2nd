@@ -19,6 +19,62 @@
 
 </head>
 <body>
+    <!-- header#hd.border-bottom.fixed-top.bg-white.py-4/ pb(패딩 버튼-위에 붙는것) -->
+    <header id="hd" class="border-bottom fixed-top bg-white">
+        <!-- 컨테이더 밖에 광고 존재해야함 -->
+        <div class="bg-dark text-white text-center py-1">7월의 마지막 혜택!</div>
+        <div class="container py-3 d-flex justify-content-between align-items-center">
+            <!-- h1>a{로고} -->
+            <h1><a href="">로고</a></h1>
+            <!-- ul#gnb.d-md-flex>li.px-1*4>a{대메뉴들} -->
+            <ul id="gnb" class="d-md-flex">
+                <li class="px-1"><a href="">대메뉴들</a></li>
+                <li class="px-1"><a href="">대메뉴들</a></li>
+                <li class="px-1"><a href="">대메뉴들</a></li>
+                <li class="px-1"><a href="">대메뉴들</a></li>
+            </ul>
+            <!-- ul.sns.d-md-flex>li.px-1*2>a -->
+            <ul class="sns d-md-flex">
+                <li class="px-1"><a href="">깃</a></li>
+                <li class="pl-1"><a href="">인스타</a></li>
+            </ul>
+            
+        </div>
+    </header>
 
+    <!-- .swiper.myswiper>.swiper-wrapper>.swiper-slide*5    맨 처음 스와이퍼는 필수 -->
+    <div class="swiper myswiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide bg-danger"></div>
+            <div class="swiper-slide bg-dark"></div>
+            <div class="swiper-slide bg-light"></div>
+            <div class="swiper-slide bg-warning"></div>
+            <div class="swiper-slide bg-success"></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+    </div>
+    <!-- 함수 세탁기 가져옴 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".myswiper", {
+          spaceBetween: 30,
+          centeredSlides: true,
+          slidesPerView: 2.1,
+          autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
 </body>
 </html>

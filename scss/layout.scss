@@ -1,0 +1,9 @@
+ul, h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+}
+
+.myswiper .swiper-slide{
+    height: calc(100vh - 100px);
+    // 화면 100vh 높이에서 100픽셀을 빼달라 / 단위가 다르니까 calc 씀
+}
